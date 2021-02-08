@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel= "icon" href="logo1.png" type="image/x-icon">
+<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet'>
+    
+    <title>Examen-SignUp</title>
+    <style>
+      .content {
+          font-family: 'Sofia';font-size: 2vw;
+          
+      }
+            /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+             margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            }
+
+/* Add a background color when the inputs get focus */
+        input[type=text]:focus, input[type=password]:focus {
+             background-color: #ddd;
+            outline: none;
+                }
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+      </style>
+ <!--     <script language="javascript">
+        function check()
+        {
+        
+         if(document.form1.lid.value=="")
+          {
+            alert("Plese Enter Login Id");
+          document.form1.lid.focus();
+          return false;
+        
+          }
+         
+         if(document.form1.pass.value=="")
+          {
+            alert("Plese Enter Your Password");
+          document.form1.pass.focus();
+          return false;
+          } 
+          if(document.form1.cpass.value=="")
+          {
+            alert("Plese Enter Confirm Password");
+          document.form1.cpass.focus();
+          return false;
+          }
+          if(document.form1.pass.value!=document.form1.cpass.value)
+          {
+            alert("Confirm Password does not matched");
+          document.form1.cpass.focus();
+          return false;
+          }
+          if(document.form1.name.value=="")
+          {
+            alert("Plese Enter Your Name");
+          document.form1.name.focus();
+          return false;
+          }
+          if(document.form1.address.value=="")
+          {
+            alert("Plese Enter Address");
+          document.form1.address.focus();
+          return false;
+          }
+          if(document.form1.city.value=="")
+          {
+            alert("Plese Enter City Name");
+          document.form1.city.focus();
+          return false;
+          }
+          if(document.form1.phone.value=="")
+          {
+            alert("Plese Enter Contact No");
+          document.form1.phone.focus();
+          return false;
+          }
+          if(document.form1.email.value=="")
+          {
+            alert("Plese Enter your Email Address");
+          document.form1.email.focus();
+          return false;
+          }
+          e=document.form1.email.value;
+            f1=e.indexOf('@');
+            f2=e.indexOf('@',f1+1);
+            e1=e.indexOf('.');
+            e2=e.indexOf('.',e1+1);
+            n=e.length;
+        
+            if(!(f1>0 && f2==-1 && e1>0 && e2==-1 && f1!=e1+1 && e1!=f1+1 && f1!=n-1 && e1!=n-1))
+            {
+              alert("Please Enter valid Email");
+              document.form1.email.focus();
+              return false;
+            }
+          return true;
+          }
+          
+        </script>-->
+</head>
+<body>
+
+  <!--navigation-->
+  <div class="container" >
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex content" style="background-color: #04325e ;  " >
+        <a class="navbar-brand" href="#">
+          <img src="logo9.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Examen
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item ml-sm-5">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Call Us</a>
+                <a class="dropdown-item" href="#">Mail Us</a>
+              </div>
+            </li>
+        
+</div>
+    </div>
+<!--Content of page-->      
+<br>
+<br>
+<h1>Click here to register yourself with Examen:</h1>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<!--SignUP Modal-->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="signup.php" method="POST" >
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="UserID"><b>User ID :-</b></label>
+      <input type="text" placeholder="Enter UserID" name="userid"  value="1">
+      <label for="UserName"><b>UserName :-</b></label>
+      <input type="text" placeholder="Enter UserName" name="user" required>
+      <label for="psw"><b> Password :-</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required>
+      <label for="course"><b>Course :-</b></label>
+      <input type="text" placeholder="Enter Course" name="course" value="ccc">
+      <label for="dob"><b>Date of birth :-</b></label>
+      <input type="date"  name="dob" required>
+      <label for="email"><b>Email ID :-</b></label>
+      <input type="email" placeholder="Enter EmailID" name="email" required>
+      <label for="phoneNo"><b>Phone No. :-</b></label>
+      <input type="tel" placeholder="Enter phoneNo" name="phone" required>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<script>
+//Calling the modal
+var modal = document.getElementById('id01');
+</script>
+<script src="js/jquery-3.5.1.js"></script>
+<!--cnd used to include popper.js file means dropdown will work only online-->   
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
